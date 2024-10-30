@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; background-color: #121212; color: #FFFFFF;">
+    <!-- Navigation Bar -->
+    <div style="background-color: #1DB954; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center;">
+        <div style="font-size: 24px; font-weight: bold;">Spotify Clone</div>
+        <input type="text" placeholder="Search" style="padding: 5px; border-radius: 20px; border: none; outline: none;">
+    </div>
+
+    <!-- Sidebar and Main Content Wrapper -->
+    <div style="display: flex;">
+        <!-- Sidebar -->
+        <div style="width: 200px; background-color: #181818; height: calc(100vh - 50px); padding: 20px; box-sizing: border-box;">
+            <div style="margin-bottom: 20px;">
+                <div style="margin-bottom: 10px;"><a href="#" style="text-decoration: none; color: #FFFFFF;">Home</a></div>
+                <div style="margin-bottom: 10px;"><a href="#" style="text-decoration: none; color: #FFFFFF;">Search</a></div>
+                <div style="margin-bottom: 10px;"><a href="#" style="text-decoration: none; color: #FFFFFF;">Your Library</a></div>
+            </div>
+            <div>
+                <div style="margin-bottom: 10px; font-weight: bold;">Playlists</div>
+                <div style="margin-bottom: 10px;"><a href="#" style="text-decoration: none; color: #FFFFFF;">Liked Songs</a></div>
+                <div style="margin-bottom: 10px;"><a href="#" style="text-decoration: none; color: #FFFFFF;">Discover Weekly</a></div>
+                <div style="margin-bottom: 10px;"><a href="#" style="text-decoration: none; color: #FFFFFF;">Release Radar</a></div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div style="flex: 1; padding: 20px; box-sizing: border-box;">
+            <h1>Welcome to Spotify Clone</h1>
+            <div style="display: flex; flex-wrap: wrap;">
+                <div style="background-color: #282828; padding: 20px; margin: 10px; width: calc(33.33% - 20px); box-sizing: border-box;">
+                    <img src="https://via.placeholder.com/150" alt="Album Cover" style="width: 100%; border-radius: 10px;">
+                    <div style="margin-top: 10px;">Album 1</div>
+                    <div>Artist 1</div>
+                </div>
+                <div style="background-color: #282828; padding: 20px; margin: 10px; width: calc(33.33% - 20px); box-sizing: border-box;">
+                    <img src="https://via.placeholder.com/150" alt="Album Cover" style="width: 100%; border-radius: 10px;">
+                    <div style="margin-top: 10px;">Album 2</div>
+                    <div>Artist 2</div>
+                </div>
+                <div style="background-color: #282828; padding: 20px; margin: 10px; width: calc(33.33% - 20px); box-sizing: border-box;">
+                    <img src="https://via.placeholder.com/150" alt="Album Cover" style="width: 100%; border-radius: 10px;">
+                    <div style="margin-top: 10px;">Album 3</div>
+                    <div>Artist 3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="background-color: #282828; padding: 10px 20px; position: fixed; bottom: 0; width: 100%; display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; align-items: center;">
+            <img src="https://via.placeholder.com/50" alt="Album Cover" style="border-radius: 5px;">
+            <div style="margin-left: 10px;">
+                <div>Now Playing</div>
+                <div style="font-size: 12px;">Song Title - Artist Name</div>
+            </div>
+        </div>
+        <div>
+            <button onclick="alert('Play/Pause clicked')" style="background-color: #1DB954; border: none; padding: 10px 20px; border-radius: 20px; color: #FFFFFF;">Play/Pause</button>
+        </div>
+        <div>
+            <button onclick="alert('Next clicked')" style="background-color: #1DB954; border: none; padding: 10px 20px; border-radius: 20px; color: #FFFFFF;">Next</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript can be added here for interactivity
+        // Example: Alert on button click
+        function playPause() {
+            alert('Play/Pause clicked');
+        }
+
+        function nextSong() {
+            alert('Next clicked');
+        }
+    </script>
+</body>
+</html>
